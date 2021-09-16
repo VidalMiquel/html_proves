@@ -1,10 +1,136 @@
+<!--Representa el tipus de document-->
 <!DOCTYPE html>
-<html>
+<!--Introduim l'idioma-->
+<html lang="ca">
+  <!--Informació apareix al browser-->
   <head>
     <title>Pàgina web</title>
+    <style>
+      body {
+        background-color: white;
+      }
+      h1 {
+        color: red;
+        background-color: black;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
   </head>
-
+  <!--Part visible del document HTML-->
   <body>
-    <div>id = ""</div>
+    <!--Titols (desde h1 fins al h6) amb color i fons-->
+    <h1>Visit Mallorca Stadium</h1>
+    <!--Introduim un separador de contingut-->
+    <hr />
+    <h2>
+      Informació relevant del
+      <abbr title="Reial Club Deportiu Mallorca">RCDM</abbr>
+    </h2>
+    <!--Paràgraf amb hiperlink, italiques i negretes-->
+    <blockquote>
+      <p>
+        L'estadi del <i><b> Real Club Deporitu Mallorca</b></i> té una capacitat
+        màxima de <ins> 220000 persones</ins> i està situat al municipi de
+        Palma.<br />
+        Per a més informació, visitau la pàgina web del club.
+        <a
+          target="_blank"
+          href="https://www.rcdmallorca.es/club/instalaciones/estadio"
+          >Visit Mallorca Stadium</a
+        >
+      </p>
+    </blockquote>
+
+    <!--Imatge centrada amb atributs de altura, amplada i "etiqueta" (en cas d'error)-->
+    <center>
+      <img
+        src="https://tmssl.akamaized.net/images/foto/galerie/son-moix-palma-de-mallorca-1581425584-31569.jpg?lm=1581425614"
+        alt="Escut del RCDMallorca"
+        style="width: 400px"
+      />
+    </center>
+
+    <!--Introduim separador de contingut-->
+    <hr />
+    <h2>Declaracions dels aficonats</h2>
+    <!--Paràgraf amb tabulador i entrecomillats-->
+    <blockquote>
+      <p>
+        En els darrers 5 anys han viscit 3 ascencs de categoria. L'afició ha
+        experimentat tot tipus d'emoció, sempre al costat de l'equip. Hem pogut
+        entrevistar el president de les penyes i aquestes han estat les seves
+        declaracions:
+        <q
+          >Des de l'arribada dels americans el club ha experimenat una millor
+          amb tots els àmbits</q
+        >
+      </p>
+    </blockquote>
+    <!--Introduim separador de contingut-->
+    <hr />
+    <!--Titol-->
+    <h2>Dades darrers 4 anys</h2>
+    <!--Tabulador-->
+    <blockquote>
+      <p>
+        A continuació, explicam mitjançant un taula el resultat de les darerres
+        tres temporades. Podem observar que les alegries superen en nombre les
+        tristeses.
+      </p>
+      <!--Taula amb caracterisitiques (es troben a head)-->
+      <table style="width: 50%">
+        <tr>
+          <th>Categoria</th>
+          <th>Any</th>
+          <th>Resultat</th>
+        </tr>
+        <tr>
+          <th>Segona A</th>
+          <th>2021</th>
+          <th>Ascencs</th>
+        </tr>
+        <tr>
+          <th>Primera</th>
+          <th>2020</th>
+          <th>Descencs</th>
+        </tr>
+        <tr>
+          <th>Segona A</th>
+          <th>2019</th>
+          <th>Acsencs</th>
+        </tr>
+      </table>
+    </blockquote>
+
+    <!--Separador de contigut -->
+    <hr />
+    <!--Títol-->
+    <h2>Ofertes de la tenda</h2>
+    <ul>
+      <b
+        ><li>
+          <a
+          target="_blank"
+            href="https://www.realmallorca.tienda/es/equipaciones-2122/480-2414-camiseta-oficial-1-equipacion-21-22-rcd-mallorca.html#/1-tamano-s/10-color-rojo/89-serigrafia-no"
+            >Primera equipació</a
+          >
+        </li></b
+      >
+      <br />
+      <b
+        ><li>
+          <a
+          target = "_blank"
+            href="https://www.realmallorca.tienda/es/inicio/495-2483-camiseta-oficial-2-equipacion-21-22-rcd-mallorca.html#/8-color-blanco/25-tamano-xl/89-serigrafia-no"
+            >Segona equipació</a
+          >
+        </li>
+      </b>
+    </ul>
   </body>
 </html>
