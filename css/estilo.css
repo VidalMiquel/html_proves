@@ -1,0 +1,60 @@
+/** Selector universal que afecta a tot es document
+*{
+ margin: 0;
+ padding: 0;
+}
+**/
+
+/**Mitjançant les etiquetes indicam una caracterísitca a diversos selectors **/
+h1,
+h2,
+h3 {
+  /**Color dels titols**/
+  color: chartreuse;
+}
+h1 {
+  /**Tamany de la font en pixels**/
+  font-size: 20px;
+  /**Color amb rgb**/
+  color: rgb(10,56,32);
+}
+/**Indicam que la lletra de TOTS els pàrrafs son del mateix color**/
+p {
+  color: cornflowerblue;
+}
+
+a {
+  color: orange;
+}
+
+/**Selectors descendets --> Indicam que nomes volem canviar el tamany de la font de les paraules en negreta que ees troben DINS un paràgraf
+   Podem indicar moltes de coses, des de links a negretes, itàliques tamany, classes...
+**/
+p b {
+  font-size: 30px;
+}
+/**Utilitzam classes per referenciar sectors especifics del html**/
+.yellow {
+  color: orange;
+}
+
+body {
+  font-size: 2em;
+}
+
+/**Indicam que el paràgref que es troba dins l'etiqueta div te un temany de lletra i una amplada específica.
+A més, el tamany fixat del paràgraf condicion el límits del color del fons**/
+div p {
+  font-size: 20px;
+  /**Amplaria**/
+  width: 500px;
+  /** height: 300px; **/
+  background: green;
+  /**Marges del paràgref**/
+  margin: 20px;
+  /**Marge interior**/
+  padding: 30px;
+  /**Borde**/
+  border:10px solid black;
+
+}
