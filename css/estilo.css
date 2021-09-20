@@ -40,6 +40,8 @@ p b {
 
 body {
   font-size: 2em;
+  background: burlywood;
+  /**background:url(RUTA RELATIVA)**/
 }
 
 /**Indicam que el paràgref que es troba dins l'etiqueta div te un temany de lletra i una amplada específica.
@@ -58,3 +60,5 @@ div p {
   border:10px solid black;
 
 }
+
+
