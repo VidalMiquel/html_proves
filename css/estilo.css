@@ -5,6 +5,20 @@
 }
 **/
 
+/**Fan referencia la cos de la plana web. **/
+body {
+  /**Tamany de la font**/
+  font-size: 2em;
+  /**Color de fons**/
+  background: burlywood;
+  /**Fon amb imatge (ruta absoluta (retrocedim dins el path una carpeta))**/
+  /**background: url(../imatges/fons.jpg);**/
+  /**Indicam que no volem la imatge de fons repetida**/
+  background-repeat: no-repeat;
+  /**Indicam que volem la imatge del fons fixat**/
+  background-attachment: fixed;
+}
+
 /**Mitjançant les etiquetes indicam una caracterísitca a diversos selectors **/
 h1,
 h2,
@@ -14,11 +28,11 @@ h3 {
 }
 h1 {
   /**Tamany de la font en pixels**/
-  font-size: 20px;
+  font-size: 60px;
   /**Color amb rgb**/
-  color: rgb(10,56,32);
+  color: rgb(10, 56, 32);
 }
-/**Indicam que la lletra de TOTS els pàrrafs son del mateix color**/
+/**Indicam que la lletra de TOTS els pàrrafs son del mateix color
 p {
   color: cornflowerblue;
 }
@@ -26,6 +40,7 @@ p {
 a {
   color: orange;
 }
+**/
 
 /**Selectors descendets --> Indicam que nomes volem canviar el tamany de la font de les paraules en negreta que ees troben DINS un paràgraf
    Podem indicar moltes de coses, des de links a negretes, itàliques tamany, classes...
@@ -38,18 +53,12 @@ p b {
   color: orange;
 }
 
-body {
-  font-size: 2em;
-  background: burlywood;
-  /**background:url(RUTA RELATIVA)**/
-}
-
 /**Indicam que el paràgref que es troba dins l'etiqueta div te un temany de lletra i una amplada específica.
 A més, el tamany fixat del paràgraf condicion el límits del color del fons**/
-div p {
+p {
   font-size: 20px;
   /**Amplaria**/
-  width: 500px;
+  width: 800px;
   /** height: 300px; **/
   background: green;
   /**Marges del paràgref**/
@@ -57,8 +66,30 @@ div p {
   /**Marge interior**/
   padding: 30px;
   /**Borde**/
-  border:10px solid black;
-
+  border: 10px solid black;
 }
 
+/**Caracteristiques de les dades**/
+table {
+  /**Amplada**/
+  width: 100%;
+  /**Bordes**/
+  border: 5px solid #000;
+  /**Feim que els bordes no es trobin separats entre si**/
+  border-collapse: collapse;
+  background: yellow;
+}
 
+th,
+td {
+  /**Amplada**/
+  width: 25%;
+  /**On trobam el text situat**/
+  text-align: left;
+  /**Bordes**/
+  border: 3px solid #000
+}
+
+th{
+  text-align: center;
+}
