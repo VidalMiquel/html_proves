@@ -1,0 +1,48 @@
+
+/**Feim referencia al menu en general **/
+ul {
+    /**Marges respecte la pantalla**/
+  margin: 0;
+  /**Relleno**/
+  padding: 0;
+  /**Posició**/
+  position:absolute;
+  /**Tamany de la font**/
+  font-size: 20px;
+  
+}
+
+/**Feim referència a**/
+ul li {
+  display: block;
+  float: left;
+  padding: 7px 10px;
+}
+/**Feim referència als desplegables**/
+li > ul{
+    /**No sobserven inicialment**/
+    display: none;
+}
+/**FEim referècnia al menu desplegable una ebgada passam per damunt ells amb el ratolí (hover)**/
+li:hover>ul{
+    /**Seran fixes**/
+    display:block;
+    /**Posició**/
+    position:absolute;
+    /**Posició respecte a la pantalla**/
+    top:35px;
+    left: 45px;
+}
+/**Caracterisituqes generals del menu**/
+li{
+    width: 200px;
+    height: 20px;
+    border: 2px solid black;
+    position: relative;
+    background-color: black;
+}
+
+/**Color dels links**/
+a{
+    color: white;
+}
