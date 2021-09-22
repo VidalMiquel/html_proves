@@ -1,15 +1,14 @@
-
+/**MENU**/
 /**Feim referencia al menu en general **/
 ul {
-    /**Marges respecte la pantalla**/
+  /**Marges respecte la pantalla**/
   margin: 0;
   /**Relleno**/
   padding: 0;
   /**Posició**/
-  position:absolute;
+  position: absolute;
   /**Tamany de la font**/
-  font-size: 20px;
-  
+  font-size: 25px;
 }
 
 /**Feim referència a**/
@@ -19,30 +18,53 @@ ul li {
   padding: 7px 10px;
 }
 /**Feim referència als desplegables**/
-li > ul{
-    /**No sobserven inicialment**/
-    display: none;
+li > ul {
+  /**No sobserven inicialment**/
+  display: none;
 }
-/**FEim referècnia al menu desplegable una ebgada passam per damunt ells amb el ratolí (hover)**/
-li:hover>ul{
-    /**Seran fixes**/
-    display:block;
-    /**Posició**/
-    position:absolute;
-    /**Posició respecte a la pantalla**/
-    top:35px;
-    left: 45px;
+/**Feim referècnia al menu desplegable una ebgada passam per damunt ells amb el ratolí (hover)**/
+li:hover > ul {
+  /**Seran fixes**/
+  display: block;
+  /**Posició**/
+  position: absolute;
+  /**Posició respecte a la pantalla**/
+  top: 45px;
+  left: 0px;
+  z-index: 1;
+  
 }
 /**Caracterisituqes generals del menu**/
-li{
-    width: 200px;
-    height: 20px;
-    border: 2px solid black;
-    position: relative;
-    background-color: black;
+li {
+  width: 420px;
+  height: 40px;
+  border: 2px solid black;
+  position: relative;
+  background-color: black;
+  margin: -8px;
 }
 
 /**Color dels links**/
-a{
-    color: white;
+a {
+  color: white;
+}
+
+.fotografia {
+  position: relative;
+  top: 58px;
+  width: 1840px;
+  height: 300px;
+  left: 0px;
+  position: relative;
+  z-index: -1;
+  margin: -8px;
+}
+
+.informacio {
+  position: relative;
+  background: salmon;
+  width: 1900;
+  height: 500px;
+  top: 45px;
+  margin: -8px;
 }
